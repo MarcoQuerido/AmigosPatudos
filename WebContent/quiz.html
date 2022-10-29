@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Quiz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style_quiz.css">
+</head>
+<body>
+	
+	<div class="home-box custom-box">
+		<h3>Quiz de conhecimento</h3>
+		<h3>Este quiz vai ajudá-lo a perceber que tipo de animal melhor se adequa a si, se pretender adotar um animal.</h3>
+		<p>Número total de perguntas:<span class="total-questions"> 5</span></p>
+		<a href="AP_Home.jsp" class="btn">Voltar à página principal</a>
+		<button type="button" class="btn" onclick="startQuiz()">Começar Quiz</button>
+	</div>
+	
+	<div class="quiz-box custom-box hide">
+		<div class="question-number">
+			
+		</div>
+		<div class="question-text">
+			
+		</div>
+		<div class="option-container">
+			
+		</div>
+		<div class="next-question-btn">
+			<button type="button" class="btn" onclick="next()">Next</button>
+		</div>
+		<div class="answers-indicator">
+		
+		</div>
+	</div>
+	
+	<div class="result-box custom-box hide">
+		<h1>Resultado do Quiz</h1>
+		<table>
+			<tr>
+				<td>Total de Perguntas</td>
+				<td><span class="total-question"></span></td>
+			</tr>
+			<tr>
+				<td>Tentativas</td>
+				<td><span class="total-attempt"></span></td>
+			</tr>
+			<tr>
+				<td>Corretas</td>
+				<td><span class="total-correct"></span></td>
+			</tr>
+			<tr>
+				<td>Erradas</td>
+				<td><span class="total-wrong"></span></td>
+			</tr>
+			<tr>
+				<td>Percentagem</td>
+				<td><span class="percentage"></span></td>
+			</tr>
+			<tr>
+				<td>Resultado total</td>
+				<td><span class="total-score"></span></td>
+			</tr>
+		</table>
+		<button type="button" class="btn" onclick="tryAgainQuiz()">Novo Quiz</button>
+		<button type="button" class="btn" onclick="goToHome()">Voltar ao Início</button>
+	</div>
+	
+	<script src="script_quiz.js"></script>
+	<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+      <form action="AdocaoDB.jsp" class="adocao-form">
+        <h1>Inscrever animal para adoção</h1>
+
+        <div class="txtb">
+          <input type="text" id="nome_pessoa" name="nome_pessoa" required>
+          <span data-placeholder="Nome do responsável pelo animal"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="text" id="telemovel" name="telemovel" pattern="[0-9]{9}" required>
+          <span data-placeholder="Número de telemóvel"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="email" id="email" name="email" required>
+          <span data-placeholder="E-mail"></span>
+        </div>
+        
+        <div class="txtb">
+          <input type="text" id="animal" name="animal" required>
+          <span data-placeholder="Animal"></span>
+        </div>       
+        
+        <div class="txtb">
+          <input type="text" id="raca" name="raca" required>
+          <span data-placeholder="Raça"></span>
+        </div> 
+                 
+        <div class="txtb">
+          <input type="text" id="idade" name="idade" required>
+          <span data-placeholder="Idade do animal"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="text" id="cidade" name="cidade" required>
+          <span data-placeholder="Cidade"></span>
+        </div>
+                
+        <div class="txtb">
+          <input type="text" id="notas" name="notas" required>
+          <span data-placeholder="Notas sobre o animal"></span>
+        </div> 
+        
+<!--    <div class="txtb">
+          <input type="file" id="imagem" accept="image/png, image/jpeg" required>
+          <span data-placeholder="Imagem"></span>
+        </div> -->                   
+        
+        <input type="submit" class="Subbtn" value="Submeter">
+
+        <div class="bottom-text">
+        	<a href="AP_Adocao.jsp" class="Subbtn" style="vertical-align: middle"> Voltar atrás </a>    
+        </div>
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+      </script>
+
+
+  </body>
+</html>
